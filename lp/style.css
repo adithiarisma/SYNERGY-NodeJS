@@ -1,0 +1,398 @@
+@charset "utf-8";
+/* CSS Document*/
+body {
+  background-color: #ffffff;
+  font-family: "Open Sans";
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  width: 100%;
+  height: 95vh;
+  position: relative;
+  background-image: url("images/ilustrasi.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #414141;
+}
+
+.hero-text span {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.hero-text h4 {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.hero-text hr {
+  width: 90px;
+  height: 3px;
+  background-color: #414141;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0px 5%;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li a {
+  margin-left: 30px;
+  color: #505050;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+nav ul li .subs {
+  padding: 8px 17px 8px 17px;
+  border: 1px solid black;
+}
+
+.logo {
+  color: #2d2a2a;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.active {
+  color: #2d2a2a;
+  font-weight: bold;
+}
+
+/* articles */
+
+.articles {
+  height: 600px;
+  padding: 5% 10% 0px 10%;
+  background-color: #f4f7f4;
+}
+
+.articles-text p {
+  font-weight: 50px;
+  color: #1d1c1c;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 0px;
+}
+
+.articles hr {
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.articles-text hr {
+  display: block;
+  height: 1px;
+  width: 5%;
+  border-top: 2px solid #000000;
+  text-align: center;
+}
+
+.box-container {
+  display: flex;
+  height: 450px;
+  justify-content: space-between;
+}
+
+.container hr {
+  width: 40px;
+  margin-top: 20px;
+}
+
+.gambar {
+  width: 350px;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card h4 {
+  text-align: center;
+  font-style: italic;
+  font-weight: 50px;
+}
+
+.card p {
+  text-align: center;
+  width: 250px;
+  font-size: 13px;
+  margin-left: 50px;
+}
+
+/* about */
+.about {
+  margin-top: 2%;
+}
+.about .row {
+  display: flex;
+}
+
+.about .content {
+  width: 100%;
+}
+
+.about img {
+  background-color: white;
+  width: 50%;
+}
+
+.about h1 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 20%;
+  text-align: center;
+  background-color: white;
+}
+
+.about p {
+  margin-top: 5%;
+  margin-left: 18%;
+  text-align: justify;
+  background-color: white;
+  width: 70%;
+  font-style: italic;
+  margin-right: 200px;
+}
+
+.about hr {
+  margin: auto;
+  width: 40px;
+  margin-top: 20px;
+}
+
+/* subscribe */
+.subscribe {
+  background-color: #f2f2f2;
+  padding: 10% 0% 10% 0%;
+}
+
+.subscribe h2,
+p {
+  text-align: center;
+  color: #414141;
+}
+
+.subscribe p {
+  font-weight: 10px;
+}
+
+.subscribe input {
+  padding: 12px; /* Some padding */
+  background-color: #e9ece9;
+  border: 2px solid white; /* Gray border */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  width: 400px;
+  resize: vertical;
+}
+
+.subscribe .mail {
+  text-align: center;
+}
+
+.subscribe .submit {
+  text-align: center;
+}
+
+.btn {
+  border: 1px solid black;
+  color: black;
+  padding: 10px 35px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+/* footer */
+footer {
+  background-color: white;
+  margin-right: 100px;
+  float: right;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 800px) {
+  body,
+  html {
+    background-color: #ffffff;
+    font-family: "Open Sans";
+    margin: 0px;
+    padding: 0px;
+    width: 1250px;
+  }
+
+  section {
+    width: 100%;
+    height: 95vh;
+    position: relative;
+    background-image: url("images/ilustrasi.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+
+  div.articles {
+    width: 1000px;
+  }
+
+  .gambar {
+    width: 320px;
+  }
+}
+
+@media screen and (max-device-width: 640px), screen and (max-width: 640px) {
+  section {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    background-image: url("images/ilustrasi.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 80%;
+  }
+
+  .card {
+    width: 80%;
+    margin-top: 5%;
+    justify-content: center;
+    margin-left: 10%;
+  }
+  .gambar {
+    width: 800px;
+  }
+
+  .about {
+    margin-top: 100%;
+  }
+  .about .row {
+    display: flex;
+  }
+
+  .card h4 {
+    text-align: center;
+    font-style: italic;
+    font-weight: 50px;
+  }
+
+  .card p {
+    text-align: center;
+    width: 400px;
+    font-size: 13px;
+    margin-left: 200px;
+  }
+
+  div.articles {
+    height: 2300px;
+  }
+
+  .about {
+    margin-top: 2%;
+  }
+
+  .about .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about .content {
+    width: 100%;
+  }
+
+  .about img {
+    background-color: white;
+    width: 100%;
+  }
+
+  .about h1 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10%;
+    text-align: center;
+    background-color: white;
+  }
+  .about hr {
+    margin: auto;
+    width: 5px;
+    margin-top: 20px;
+  }
+
+  .about p {
+    margin-top: 5%;
+    margin-left: 15%;
+    text-align: justify;
+    background-color: white;
+    width: 70%;
+    margin-right: 200px;
+    margin-bottom: 5%;
+  }
+
+  .subscribe h2,
+  p {
+    text-align: center;
+    color: #414141;
+  }
+
+  .subscribe p {
+    font-weight: 10px;
+  }
+
+  .subscribe input {
+    padding: 20px; /* Some padding */
+    background-color: #e9ece9;
+    border: 3px solid white; /* Gray border */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    width: 600px;
+    resize: vertical;
+  }
+}
